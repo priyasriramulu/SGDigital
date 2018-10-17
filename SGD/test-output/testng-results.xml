@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="640" started-at="2018-10-15T04:05:28Z" finished-at="2018-10-15T04:05:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="640" started-at="2018-10-15T04:05:28Z" finished-at="2018-10-15T04:05:29Z">
+      <class name="CheckLink.NewTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:CheckLink.NewTest@e45f292]" name="startReport" is-config="true" duration-ms="200" started-at="2018-10-15T04:05:28Z" finished-at="2018-10-15T04:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="f()[pri:0, instance:CheckLink.NewTest@e45f292]" name="f" duration-ms="0" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CheckLink.NewTest@e45f292]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f status=SUCCESS method=NewTest.f()[pri:0, instance:CheckLink.NewTest@e45f292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="failTest()[pri:0, instance:CheckLink.NewTest@e45f292]" name="failTest" duration-ms="10" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at CheckLink.NewTest.failTest(NewTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CheckLink.NewTest@e45f292]" name="getResult" is-config="true" duration-ms="10" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failTest status=FAILURE method=NewTest.failTest()[pri:0, instance:CheckLink.NewTest@e45f292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CheckLink.NewTest@e45f292]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=NewTest.passTest()[pri:0, instance:CheckLink.NewTest@e45f292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="passTest()[pri:0, instance:CheckLink.NewTest@e45f292]" name="passTest" duration-ms="0" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passTest -->
+        <test-method status="SKIP" signature="skipTest()[pri:0, instance:CheckLink.NewTest@e45f292]" name="skipTest" duration-ms="0" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping - This is not ready for testing ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping - This is not ready for testing 
+at CheckLink.NewTest.skipTest(NewTest.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipTest -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:CheckLink.NewTest@e45f292]" name="endReport" is-config="true" duration-ms="360" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:CheckLink.NewTest@e45f292]" name="getResult" is-config="true" duration-ms="0" started-at="2018-10-15T04:05:29Z" finished-at="2018-10-15T04:05:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=skipTest status=SKIP method=NewTest.skipTest()[pri:0, instance:CheckLink.NewTest@e45f292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- CheckLink.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
