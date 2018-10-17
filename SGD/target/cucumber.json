@@ -1,0 +1,175 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Sign up for new acount",
+        "description": "",
+        "id": "user-story-1---login-page;sign-up-for-new-acount",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17120766672,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User on the home page",
+            "match": {
+              "location": "HopePageStepDefinitions.user_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4212052429,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on Sign Up Menu",
+            "match": {
+              "location": "HopePageStepDefinitions.clickonSignUpMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136677967,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I can see Account creation page",
+            "match": {
+              "location": "AccStepDefinitions.i_can_see_Account_creation_page(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "hello world"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13700762899,
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: Timed out after 10000 milliseconds: net.serenitybdd.core.pages.RenderedPageObjectView$2@c35af2a\nBuild info: version: \u00273.5.2\u0027, revision: \u002710229a9\u0027, time: \u00272017-08-21T17:29:55.15Z\u0027\nSystem info: host: \u0027HAUSGSGPA0011C\u0027, ip: \u002710.50.131.54\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.scheduling.ThucydidesFluentWait.timeoutException(ThucydidesFluentWait.java:124)\r\n\tat net.thucydides.core.scheduling.ThucydidesFluentWait.until(ThucydidesFluentWait.java:76)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitForElement(RenderedPageObjectView.java:124)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:115)\r\n\tat Pages.AccountPage.company_signin(AccountPage.java:151)\r\n\tat Steps.AccPageStep.CompanyDetails(AccPageStep.java:41)\r\n\tat Steps.AccPageStep$$EnhancerByCGLIB$$87e6a56b.CGLIB$CompanyDetails$2(\u003cgenerated\u003e)\r\n\tat Steps.AccPageStep$$EnhancerByCGLIB$$87e6a56b$$FastClassByCGLIB$$64dd7521.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat Steps.AccPageStep$$EnhancerByCGLIB$$87e6a56b.CompanyDetails(\u003cgenerated\u003e)\r\n\tat HomePageStepDefinitions.AccStepDefinitions.I_input_the_fields(AccStepDefinitions.java:73)\r\n\tat ✽.Then I input the fields(src/main/java/Feature/Login.Feature:14)\r\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "I input the fields",
+            "match": {
+              "location": "AccStepDefinitions.I_input_the_fields(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "PlanType",
+                  "Firstname",
+                  "Lastname",
+                  "Email",
+                  "Confirm Email",
+                  "Username",
+                  "Password",
+                  "ConfirmPassword",
+                  "company_name",
+                  "company_phone",
+                  "company_email",
+                  "company_fax",
+                  "company_desc",
+                  "city",
+                  "state",
+                  "postcode",
+                  "country"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Free Edition",
+                  "John2",
+                  "Nicolas2",
+                  "JohnNicolas@gmail.com",
+                  "JohnNicolas@gmail.com",
+                  "Johnnicolas22",
+                  "Password#123",
+                  "Password#123",
+                  "siv",
+                  "12345",
+                  "sv@gmail.com",
+                  "12345",
+                  "fdfdgs",
+                  "test",
+                  "Michigan",
+                  "112233",
+                  "Australia"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Free Edition",
+                  "Joh",
+                  "Nic",
+                  "JohnNic@gmail.com",
+                  "JohnNic@gmail.com",
+                  "johnnic",
+                  "Password#123",
+                  "Password#123",
+                  "comp",
+                  "112233",
+                  "comp@gmail.com",
+                  "112233",
+                  "nghgj",
+                  "fdfdg",
+                  "Michigan",
+                  "12321",
+                  "Canada"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Free Edition",
+                  "test",
+                  "tester",
+                  "tester@gmail.com",
+                  "tester@gmail.com",
+                  "testtester",
+                  "Password#123",
+                  "Password#123",
+                  "comp2",
+                  "143212",
+                  "comp2@gmail.com",
+                  "14321",
+                  "ddff",
+                  "tytyr",
+                  "Michigan",
+                  "343422",
+                  "Finland"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Story 1 - Login page",
+    "description": "\r\nAs a user\r\nI want to login \r\nSo that i can see my account home page",
+    "id": "user-story-1---login-page",
+    "keyword": "Feature",
+    "uri": "src/main/java/Feature/Login.Feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@UserStory1"
+      }
+    ]
+  }
+]
