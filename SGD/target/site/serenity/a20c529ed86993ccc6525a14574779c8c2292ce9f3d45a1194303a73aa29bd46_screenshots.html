@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="2a88e2ec8457789ded06a6d9f35d4bf89e148115c476d140921dc4cb97693c4e.html">User Story 1 - Login Page</a>
+                > <a
+                    href="a20c529ed86993ccc6525a14574779c8c2292ce9f3d45a1194303a73aa29bd46.html">Sign up for new acount </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-10-2018 14:43</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">User Story 1 - Login Page</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user
+I want to login
+So that i can see my account home page
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="973a4b50ad17a02f0ed452827d90f50ce7fe762c2cc409a840865c20c891113e.html">Userstory1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Sign Up For New Acount
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+                <div class="panel-heading"><span class='error-caption ellipsis'>ERROR: No such element exception: The follow...</span></div>
+                <div class="panel-body">
+                    <a href="pagesource5123829412333060253.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="899589f58431d089429b110be50a7bef5909a6e32424a48121a37480cc18d617.png" title="When click on Sign Up Menu" width="960"/>
+                <img src="899589f58431d089429b110be50a7bef5909a6e32424a48121a37480cc18d617.png" title="Click menu signup" width="960"/>
+                <img src="899589f58431d089429b110be50a7bef5909a6e32424a48121a37480cc18d617.png" title="Then I can see Account creation page
+| hello world |" width="960"/>
+                <img src="899589f58431d089429b110be50a7bef5909a6e32424a48121a37480cc18d617.png" title="Verify acc page" width="960"/>
+                <img src="899589f58431d089429b110be50a7bef5909a6e32424a48121a37480cc18d617.png" title="Then I input the fields
+| PlanType | Firstname | Lastname | Email | Confirm Email | Username | Password | ConfirmPassword | company_name | company_phone | company_email | company_fax | company_desc | city | state | postcode | country |
+| Free Edition | John2 | Nicolas2 | JohnNicolas@gmail.com | JohnNicolas@gmail.com | Johnnicolas22 | Password#123 | Password#123 | siv | 12345 | sv@gmail.com | 12345 | fdfdgs | test | Michigan | 112233 | Australia |
+| Free Edition | Joh | Nic | JohnNic@gmail.com | JohnNic@gmail.com | johnnic | Password#123 | Password#123 | comp | 112233 | comp@gmail.com | 112233 | nghgj | fdfdg | Michigan | 12321 | Canada |
+| Free Edition | test | tester | tester@gmail.com | tester@gmail.com | testtester | Password#123 | Password#123 | comp2 | 143212 | comp2@gmail.com | 14321 | ddff | tytyr | Michigan | 343422 | Finland |" width="960"/>
+                <img src="899589f58431d089429b110be50a7bef5909a6e32424a48121a37480cc18d617.png" title="Input fields: Free Edition, John2, Nicolas2, JohnNicolas@gmail.com, JohnNicolas@gmail.com, Johnnicolas22, Password#123, Password#123" width="960"/>
+                <img src="22f9041b6a961be45bff382197e0bf3c388df84af16f3aba17bf032f3462c4ca.png" title="Company details: siv, 12345, sv@gmail.com, 12345, fdfdgs, test, Michigan, 112233, Australia" width="960"/>
+                <img src="c8a8055b907baf4254a8465a3aa05caa7aed82b65d1d6092c0f3a3fa094adb4b.png" title="Company details: siv, 12345, sv@gmail.com, 12345, fdfdgs, test, Michigan, 112233, Australia: <span class='error-color'>ERROR</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

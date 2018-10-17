@@ -1,0 +1,34 @@
+@UserStory1
+Feature: User Story 1 - Login page
+  
+  As a user
+  I want to login 
+  So that i can see my account home page
+
+  Scenario: Sign up for new acount       # src/main/java/Feature/Login.Feature:8
+    Given User on the home page          # HopePageStepDefinitions.user_on_the_home_page()
+    When click on Sign Up Menu           # HopePageStepDefinitions.clickonSignUpMenu()
+    Then I can see Account creation page # AccStepDefinitions.i_can_see_Account_creation_page(DataTable)
+    Then I input the fields              # AccStepDefinitions.I_input_the_fields(DataTable)
+      net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: Timed out after 10000 milliseconds: net.serenitybdd.core.pages.RenderedPageObjectView$2@27df0f3d
+      Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'
+      System info: host: 'HAUSGSGPA0011C', ip: '10.50.131.54', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+      Driver info: driver.version: unknown
+      	at net.thucydides.core.scheduling.ThucydidesFluentWait.timeoutException(ThucydidesFluentWait.java:124)
+      	at net.thucydides.core.scheduling.ThucydidesFluentWait.until(ThucydidesFluentWait.java:76)
+      	at net.serenitybdd.core.pages.RenderedPageObjectView.waitForElement(RenderedPageObjectView.java:124)
+      	at net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:115)
+      	at Pages.AccountPage.company_signin(AccountPage.java:152)
+      	at Steps.AccPageStep.CompanyDetails(AccPageStep.java:41)
+      	at Steps.AccPageStep$$EnhancerByCGLIB$$87e6a56b.CGLIB$CompanyDetails$2(<generated>)
+      	at Steps.AccPageStep$$EnhancerByCGLIB$$87e6a56b$$FastClassByCGLIB$$64dd7521.invoke(<generated>)
+      	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+      	at Steps.AccPageStep$$EnhancerByCGLIB$$87e6a56b.CompanyDetails(<generated>)
+      	at HomePageStepDefinitions.AccStepDefinitions.I_input_the_fields(AccStepDefinitions.java:73)
+      	at ✽.Then I input the fields(src/main/java/Feature/Login.Feature:14)
+
